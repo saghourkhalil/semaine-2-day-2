@@ -4,13 +4,13 @@ require_relative 'game.rb'
 
 
 class TicTacToe
-    attr_accessor :name1, :name2, :game_data
+    attr_accessor :name1, :name2
 
     def initialize
       welcome_screen
       game_loop
     end
-
+# accueille les joueurs, demande des noms
     def welcome_screen 
   
       puts "||BIENVENUE||\n\n\n"
@@ -21,19 +21,18 @@ class TicTacToe
       @name2 = gets.chomp
       puts " "
     end
-
+# boucle entre l'exécution du jeu et demander si l'utilisateur veut jouer à nouveau
     def game_loop 
       game_start
       play_again
     end
-
+# crée et exécute le jeu sans retourner au debut
     def game_start 
       board = Board.new
       player1, player2 = Player.new(@name1), Player.new(@name2)
       game = Game.new(player1, player2, board)
     end
-
-
+# demande à l'utilisateur s'il veut jouer à nouveau
     def play_again
       input = nil
       until input == "Y" or input == "N"
