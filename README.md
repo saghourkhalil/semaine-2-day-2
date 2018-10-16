@@ -1,7 +1,5 @@
 # semaine-3-day-2
 
-
-SaSSou [22 h 40]
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQ2u83eY20tq_76zzFv7QUDfheZCTA8naDzEvzkBzILnaqDIRJw" align="center" />
 
 
